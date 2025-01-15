@@ -16,7 +16,7 @@ const TaskPage: React.FC = () => {
   return (
     <div className={`h-screen w-screen ${theme === 'dark' ? 'dark' : 'light'}`}>
     <Header/>
-   <section className='flex flex-row p-4'>
+   <section className='flex flex-col items-center md:flex-row  p-4'>
 
     { control && <LeftPart/> }
      <RightPart/>

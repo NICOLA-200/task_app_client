@@ -44,7 +44,7 @@ const TaskDetails: React.FC<TaskDetailsProps> = ({ task }) => {
 
 
   return (
-    <div className={`flex relative flex-col w-96 min-w-80 ${theme === 'light' ? 'bg-[#ffffff]' : 'bg-[#1B1B1B]'} text-xs h-[90vh] p-4 border-l-2 border-neutral-200`}>
+    <div className={`flex relative flex-col w-96 lg:min-w-80 ${theme === 'light' ? 'bg-[#ffffff]' : 'bg-[#1B1B1B]'} text-xs h-[90vh] p-4 border-l-2 border-neutral-200`}>
       <div className="flex items-center justify-between border-t-2 border-neutral-300  mb-4">
         <div className="flex items-center gap-2">
           <input
