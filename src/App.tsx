@@ -5,7 +5,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Login from './pages/login';
 import TaskPage from './pages/taskPage';
 
-import './index.css'
+
 
 // import { RootState } from '@reduxjs/toolkit/query';
 
@@ -21,7 +21,7 @@ const App: React.FC = () => {
   return (
       <Router>
         <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
           <Route
             path="/task"
             element={isAuthenticated ? <TaskPage /> : <Login />}
