@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector, } from 'react-redux';
 import { RootState, } from '../store/Store';
 import Header from '../components/Header'
-import './index.css'
+
 import RightPart from '../components/TaskArea';
 import LeftPart from '../components/Sidebar';
 import TaskDetails from '../components/TaskDetail';
