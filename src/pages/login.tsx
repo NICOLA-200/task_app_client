@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { login } from './authSlice';
+import { login } from '../store/authSlice';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
-const Login = () => {
+const Login: React.FC = () => {
   const [username, setUsername] = useState('');
   const dispatch = useDispatch();
   const navigate = useNavigate(); // Initialize navigate
@@ -11,7 +11,7 @@ const Login = () => {
   const handleLogin = () => {
     if (username.trim()) {
       dispatch(login({ username }));
-      navigate('/home'); // Redirect to home page after login
+      navigate('/task'); // Redirect to home page after login
     }
   };
 

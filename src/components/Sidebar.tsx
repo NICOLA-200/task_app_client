@@ -31,7 +31,7 @@ interface ChartData {
 const Sidebar: React.FC = () => {
   
   const theme = useSelector((state : RootState) => state.theme.theme)
-  const [chartData, setChartData] = useState<ChartData>({
+  const [chartData] = useState<ChartData>({
   
     datasets: [
       {

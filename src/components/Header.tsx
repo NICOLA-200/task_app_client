@@ -6,6 +6,8 @@ import { RootState, AppDispatch } from '../store/Store';
 import { toggleTheme } from '../store/themeSlice';
 import logo from '../assets/logo.png'
 import { toggleMenu } from "../store/controllerSlice";
+import { RiLogoutBoxLine } from "react-icons/ri";
+import { logout } from "../store/authSlice";
 
 
 
@@ -32,6 +34,12 @@ const Header: React.FC = () => {
           aria-label="Search"
         >
           <FaSearch className="" size={18} />
+        </button>
+        <button
+          className="p-2 rounded-full hover:bg-gray-700"
+          aria-label="Search"
+        >
+          <RiLogoutBoxLine className="" onClick={() => dispatch(logout())} size={18} />
         </button>
 
         {/* Grid Icon */}
