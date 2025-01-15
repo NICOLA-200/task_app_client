@@ -73,7 +73,8 @@ const TaskArea: React.FC = () => {
               <div
                 onClick={() => dispatch(getTask(task.id))}
                 key={index}
-                className={`flex items-center justify-between p-2 border-b-2  border-neutral-200  hover:shadow-sm `}
+                
+                className={`flex items-center  justify-between p-2 border-b-2  border-neutral-200  hover:shadow-sm `}
               >
                 <div  className="flex items-center gap-4">
                   <input
