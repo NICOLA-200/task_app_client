@@ -22,8 +22,10 @@ const App: React.FC = () => {
       <Router>
         <Routes>
         <Route path="/login" element={<Login />} />
+
+
           <Route
-            path="/task"
+            path="/home"
             element={isAuthenticated ? <TaskPage /> : <Login />}
           />
 

@@ -13,7 +13,7 @@ const Login: React.FC = () => {
   const handleLogin = () => {
     if (username.trim() && password == '12345') {
       dispatch(login({ username }));
-      navigate('/task'); // Redirect to home page after login
+      navigate('/home'); // Redirect to home page after login
     } else {
         setError(true)
     }
