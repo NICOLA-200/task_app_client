@@ -46,7 +46,7 @@ const Sidebar: React.FC = () => {
 
 
   return (
-    <div className={`flex flex-col h-full  relative top-12 ${theme === 'light' ? 'bg-[#357937]': 'bg-[#2C2C2C]'} px-3 items-center justify-center w-72 min-w-80`}>
+    <div className={`flex flex-col h-full  relative top-12 ${theme === 'light' ? 'bg-[#EEF6EF]': 'bg-[#2C2C2C]'} px-3 items-center justify-center w-72 min-w-80`}>
       {/* Profile Section */}
       <div className="flex flex-col absolute -top-9 items-center mb-8">
         <img
