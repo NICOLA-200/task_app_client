@@ -38,7 +38,7 @@ const TaskArea: React.FC = () => {
         <h1 className=" font-bold text-gray-300">To Do</h1>
 
         <div className={`w-full ${theme === 'light' ? 'bg-[#ffffff]' : 'bg-[#1B1B1B]'} py-3  pt-6 gap-24 space-y-8 flex-col`}>
-          <input type="text" value={newTask} onChange={(e) => setNewTask(e.target.value)} placeholder="todo..."   className="w-full h-4 p-5 bg-[#EEF6EF] "/>
+          <input type="text" value={newTask} onChange={(e) => setNewTask(e.target.value)} placeholder="todo..."   className={`w-full h-4 p-5 ${theme === 'light' ? 'bg-[#ffffff]' : 'bg-[#1B1B1B]'} `}/>
           <div className="flex items-center justify-between gap-4">
           <div>
           <button className="p-2 ml-2 rounded-full text-gray-500 hover:bg-gray-100">

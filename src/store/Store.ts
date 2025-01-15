@@ -2,12 +2,14 @@ import { configureStore } from '@reduxjs/toolkit';
 import taskReducer from './TodoSlice';
 import themeReducer from './themeSlice';
 import controllerReducer from './controllerSlice'
+import authReducer from  './authSlice'
 
 const store = configureStore({
   reducer: {
     tasks: taskReducer,
     theme: themeReducer,
-    controller: controllerReducer
+    controller: controllerReducer,
+    auth: authReducer,
   },
 });
 
